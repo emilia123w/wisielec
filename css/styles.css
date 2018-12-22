@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  color:lightgray;
+  font-size: 28px;
+}
+
+
+
+#plansza {
+  width: 1300px;
+  margin-top:50px;
+  margin-bottom:50px;
+  text-align: center;
+  font-size:48px;
+  min-height: 60px;
+}
+
+#obrazek {
+  float:left;
+  width: 700px;
+  text-align:center;
+  min-height:280px;
+
+}
+
+#alfabet {
+  float:left;
+  width: 450px;
+  text-align:center;
+  min-height:280px;
+}
+
+.litera{
+  width:30px;
+  height:30px;
+  text-align:center;
+  padding:5px;
+  margin:5px;
+  border:3px solid gray;
+  float:left;
+  cursor:pointer;
+  border-radius:15px;
+}
