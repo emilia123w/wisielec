@@ -2,6 +2,7 @@ body {
   background-color: black;
   color:lightgray;
   font-size: 28px;
+  font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -40,4 +41,18 @@ body {
   float:left;
   cursor:pointer;
   border-radius:15px;
+}
+.litera:hover{
+  background-color: #222222;
+  color:white;
+  border: 3px solid white;
+}
+
+.reset{
+  cursor:pointer;
+  color:green;
+  font-size:48px;
+}
+.reset:hover{
+  color:white;
 }
