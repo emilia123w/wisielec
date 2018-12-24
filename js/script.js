@@ -123,12 +123,12 @@ function sprawdz(nr){
   }
   //wygrana
   if(haslo==haslo1){
-  document.getElementById("alfabet").innerHTML="tak jest! Podano prawidlowe haslo: "+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+  document.getElementById("alfabet").innerHTML="tak jest!<br/>Podano prawidlowe haslo:<br/> "+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
   document.getElementById("obrazek").innerHTML="<img class='final' src='img/win.PNG'>"}
 
   //przegrana
   if(ileSkuch>5){
-  document.getElementById("alfabet").innerHTML="Przegrana! Prawidlowe haslo: "+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+  document.getElementById("alfabet").innerHTML="Przegrana! Prawidlowe haslo:<br/> "+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
   document.getElementById("obrazek").innerHTML="<img class='final' src='img/final.PNG'>"
 }
 }
