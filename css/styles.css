@@ -23,6 +23,9 @@ body {
   min-height:280px;
 
 }
+.final {
+  max-width:700px;
+}
 
 #alfabet {
   float:left;
