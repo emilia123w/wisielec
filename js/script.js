@@ -112,9 +112,9 @@ function sprawdz(nr){
 
   }
   //wygrana
-  if(haslo==haslo1)
+  if(haslo==haslo1){
   document.getElementById("alfabet").innerHTML="tak jest! Podano prawidlowe haslo:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
-
+  document.getElementById("obrazek").innerHTML="<img class='final' src='img/win.png'>"}
 
   //przegrana
   if(ileSkuch>=5){
