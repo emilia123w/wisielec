@@ -117,7 +117,7 @@ function sprawdz(nr){
   document.getElementById("obrazek").innerHTML="<img class='final' src='img/win.png'>"}
 
   //przegrana
-  if(ileSkuch>=5){
+  if(ileSkuch>5){
   document.getElementById("alfabet").innerHTML="Przegrana! Prawidlowe haslo:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
   document.getElementById("obrazek").innerHTML="<img class='final' src='img/final.png'>"
 }
