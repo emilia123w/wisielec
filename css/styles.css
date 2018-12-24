@@ -71,3 +71,19 @@ body {
   background-color: green;
   cursor:pointer;
 }
+
+@media only screen and (max-width:950px){
+  #plansza{
+    width:700px;
+  }
+}
+@media only screen and (max-width:699px){
+  #plansza{
+    width:400px;
+  }
+}
+@media only screen and (max-width:399px){
+  #plansza{
+    width:300px;
+  }
+}
