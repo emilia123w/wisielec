@@ -1,9 +1,17 @@
-var haslo = new Array(2);
+document.getElementById("button").onclick = start;
+document.getElementById("button1").onclick = start;
+document.getElementById("button2").onclick = start;
+document.getElementById("button3").onclick = start;
+
+
+var haslo = new Array(4);
 haslo[0] = "Widzimy się w Warszawie";
 haslo[1] = "Ludzie to gnidy";
 haslo[2] = "Nie lubię czegoś takiego";
 haslo[3] = "Co tam słychać na kanapie";
-var x = Math.floor((Math.random() * 4));
+haslo[4] = "No dobra emila juz naprawde";
+
+var x = Math.floor((Math.random() * 5));
 var haslo = haslo[x];
 
 haslo=haslo.toUpperCase();
@@ -20,7 +28,7 @@ function wypisz_haslo(){
   document.getElementById("plansza").innerHTML=haslo1;
 }
 
-window.onload = start;
+
 
 var litery = new Array(35);
 
@@ -62,6 +70,7 @@ litery[34]="Ż";
 
 function start(){
   var tresc_diva="";
+
 
   for(i=0; i<35; i++){
     var element = "lit"+i;
@@ -114,12 +123,12 @@ function sprawdz(nr){
   }
   //wygrana
   if(haslo==haslo1){
-  document.getElementById("alfabet").innerHTML="tak jest! Podano prawidlowe haslo:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+  document.getElementById("alfabet").innerHTML="tak jest! Podano prawidlowe haslo: "+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
   document.getElementById("obrazek").innerHTML="<img class='final' src='img/win.PNG'>"}
 
   //przegrana
   if(ileSkuch>5){
-  document.getElementById("alfabet").innerHTML="Przegrana! Prawidlowe haslo:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+  document.getElementById("alfabet").innerHTML="Przegrana! Prawidlowe haslo: "+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
   document.getElementById("obrazek").innerHTML="<img class='final' src='img/final.PNG'>"
 }
 }
