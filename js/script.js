@@ -1,4 +1,10 @@
-var haslo ="bez pracy nie ma kołaczy";
+var haslo = new Array(2);
+haslo[0] = "Widzimy sie w Warszawie";
+haslo[1] = "Ludzie to gnidy";
+haslo[2] = "Nie lubię czegoś takiego";
+var x = Math.floor((Math.random() * 3));
+var haslo = haslo[x];
+
 haslo=haslo.toUpperCase();
 var dlugosc = haslo.length;
 var ileSkuch=0;
@@ -6,7 +12,7 @@ var ileSkuch=0;
 var haslo1 = "";
 
 for(i=0; i<dlugosc;i++){
-  if(haslo[i]==" ") haslo1=haslo1+" ";
+  if(haslo.charAt(i)==" ") haslo1=haslo1+" ";
   else haslo1=haslo1+"-";
 }
 function wypisz_haslo(){
@@ -108,9 +114,10 @@ function sprawdz(nr){
   //wygrana
   if(haslo==haslo1)
   document.getElementById("alfabet").innerHTML="tak jest! Podano prawidlowe haslo:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
+
+
   //przegrana
   if(ileSkuch>=5)
   document.getElementById("alfabet").innerHTML="Przegrana! Prawidlowe haslo:"+haslo+'<br/><br/><span class="reset" onclick="location.reload()">JESZCZE RAZ?</span>'
 
-  
 }
