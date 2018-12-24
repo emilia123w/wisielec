@@ -1,8 +1,9 @@
 var haslo = new Array(2);
-haslo[0] = "Widzimy sie w Warszawie";
+haslo[0] = "Widzimy się w Warszawie";
 haslo[1] = "Ludzie to gnidy";
 haslo[2] = "Nie lubię czegoś takiego";
-var x = Math.floor((Math.random() * 3));
+haslo[3] = "Co tam słychać na kanapie";
+var x = Math.floor((Math.random() * 4));
 var haslo = haslo[x];
 
 haslo=haslo.toUpperCase();
