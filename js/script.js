@@ -1,18 +1,25 @@
-document.getElementById("button").onclick = start;
+$('#button').click(function(event){
+  start();
+})
+
 document.getElementById("button1").onclick = start;
 document.getElementById("button2").onclick = start;
 document.getElementById("button3").onclick = start;
 
 
-var haslo = new Array(4);
+
+var haslo = new Array(6);
 haslo[0] = "Widzimy się w Warszawie";
 haslo[1] = "Ludzie to gnidy";
 haslo[2] = "Nie lubię czegoś takiego";
 haslo[3] = "Co tam słychać na kanapie";
 haslo[4] = "No dobra emila juz naprawde";
+haslo[5] = "Jestem zmęczony";
+haslo[6] = "Muszę pilnie schundąć";
 
 var x = Math.floor((Math.random() * 5));
 var haslo = haslo[x];
+
 
 haslo=haslo.toUpperCase();
 var dlugosc = haslo.length;
@@ -20,10 +27,12 @@ var ileSkuch=0;
 
 var haslo1 = "";
 
+
 for(i=0; i<dlugosc;i++){
   if(haslo.charAt(i)==" ") haslo1=haslo1+" ";
   else haslo1=haslo1+"-";
 }
+
 function wypisz_haslo(){
   document.getElementById("plansza").innerHTML=haslo1;
 }
