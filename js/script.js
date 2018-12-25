@@ -1,5 +1,6 @@
 $('#button').click(function(event){
   start();
+
 })
 
 document.getElementById("button1").onclick = start;
@@ -17,7 +18,7 @@ haslo[4] = "No dobra emila juz naprawde";
 haslo[5] = "Jestem zmęczony";
 haslo[6] = "Muszę pilnie schundąć";
 
-var x = Math.floor((Math.random() * 5));
+var x = Math.floor((Math.random() * 7));
 var haslo = haslo[x];
 
 
@@ -79,7 +80,6 @@ litery[34]="Ż";
 
 function start(){
   var tresc_diva="";
-
 
   for(i=0; i<35; i++){
     var element = "lit"+i;
